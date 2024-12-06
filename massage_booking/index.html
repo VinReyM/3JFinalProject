@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massage Booking Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Massage Therapy & Online Booking</h1>
+        <h4>by</h4>
+        <h4>Arvin Rey Fagutao</h4>
+        <h4>Stephen Teope</h4>
+        <h4>Charles Ruelos</h4>
+
+
+        <section class="services-section">
+            <h2>Our Services</h2>
+
+            <div class="service-cards-container">
+
+                <div class="service-card">
+                    <img src="images/swedish_massage.jpg" alt="Swedish Massage">
+                    <h3>Arvin's Massage</h3>
+                    <p>A relaxing massage that uses long strokes to improve circulation and reduce stress.</p>
+                    <button class="book-now" data-service="Swedish Massage">Book Now</button>
+                </div>
+
+
+                <div class="service-card">
+                    <img src="images/deep_tissue_massage.jpg" alt="Deep Tissue Massage">
+                    <h3>Charles' Massage</h3>
+                    <p>Therapeutic massage that targets deeper layers of muscle tissue to relieve pain and tension.</p>
+                    <button class="book-now" data-service="Deep Tissue Massage">Book Now</button>
+                </div>
+
+
+                <div class="service-card">
+                    <img src="images/aromatherapy_massage.jpg" alt="Aromatherapy Massage">
+                    <h3>Stephen's Massage</h3>
+                    <p>A healing massage using essential oils to promote relaxation and enhance emotional wellbeing.</p>
+                    <button class="book-now" data-service="Aromatherapy Massage">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="booking-section">
+            <h2>Book Your Appointment</h2>
+
+            <form id="booking-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+
+                <label for="service_name">Service Name</label>
+                <input type="text" id="service_name" readonly>
+
+                <label for="appointment_date">Date</label>
+                <input type="date" id="appointment_date" required>
+
+                <label for="start_time">Time</label>
+                <input type="time" id="start_time" required>
+
+                <label for="contact_info">Contact Info</label>
+                <input type="text" id="contact_info" required>
+
+                <label for="special_requests">Special Requests</label>
+                <textarea id="special_requests"></textarea>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+
+        <section class="appointments-section">
+            <h2>Your Appointments</h2>
+            <table id="appointments-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Service</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Contact Info</th>
+                        <th>Special Requests</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
